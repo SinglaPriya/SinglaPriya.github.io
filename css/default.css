@@ -189,11 +189,11 @@ h1{
 	font:38px 'District Thin', helvetica, arial;
 	font-weight:lighter;
 	margin:20px 0;
-	color:#333;
+	color: black;
 
-	-webkit-text-fill-color: #333;
+	/* -webkit-text-fill-color: #333;
 	-webkit-text-stroke-color: white;
-	-webkit-text-stroke-width: 0.005em;
+	-webkit-text-stroke-width: 0.005em; */
 }
 
 h2, h3 {
@@ -822,7 +822,8 @@ footer{
 	height:100px;
 	width:1000px;
 	overflow:hidden;
-	/* opacity:0; */
+	opacity:0;
+	color: black;
 	-webkit-transition:opacity 0.1s;
 	-moz-transition:opacity 0.1s;
 	-o-transition:opacity 0.1s;
