@@ -21,9 +21,9 @@
 	
 		var img = $('<img />');
 		img.load(function() {
-			var container = $('.magazine1 .p'+page);
+			var container = $('.magazine6 .p'+page);
 			img.css({width: '100%', height: '100%'});
-			img.appendTo($('.magazine1 .p'+page));
+			img.appendTo($('.magazine6 .p'+page));
 			container.find('.loader').remove();
 		});
 	
@@ -119,7 +119,7 @@
 				$('#slider').slider('value', getViewNumber(book, page));
 	
 				if (page!=1 && page!=book.turn('pages'))
-					$('.magazine1 .tabs').fadeIn(500);
+					$('.magazine6 .tabs').fadeIn(500);
 	
 	
 				book.turn('center');
@@ -186,7 +186,7 @@
 	
 					} else {
 	
-						$('.magazine1').removeClass('animated').addClass('zoom-in');
+						$('.magazine6').removeClass('animated').addClass('zoom-in');
 						$('.splash').addClass('no-transition').height($(window).height());
 						$('body > :not(.splash)').hide();
 	
@@ -205,20 +205,20 @@
 				zoomOut: function () {
 			
 					setTimeout(function(){
-						$('.magazine1').addClass('animated').removeClass('zoom-in');
+						$('.magazine6').addClass('animated').removeClass('zoom-in');
 					}, 0);
 	
 				},
 	
 				swipeLeft: function() {
 	
-					$('.magazine1').turn('next');
+					$('.magazine6').turn('next');
 	
 				},
 	
 				swipeRight: function() {
 					
-					$('.magazine1').turn('previous');
+					$('.magazine6').turn('previous');
 	
 				}
 			}
@@ -265,8 +265,8 @@
 		if (!sample.flipbook) {
 	
 			var bookClass = (Modernizr.csstransforms) ?
-				'mag1-transform magazine1' :
-				'magazine1';
+				'mag1-transform magazine6' :
+				'magazine6';
 	
 			sample.flipbook = $('<div />', {'class': bookClass}).
 				html('<div ignore="1" class="next-button"></div> <div ignore="1" class="previous-button"></div>').

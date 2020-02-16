@@ -86,10 +86,10 @@
 		flipbook.turn({
 			acceleration: !isChrome(),
 			gradients: true,
-			// width:900,
-			// height:600,
+			width:842,
+			height:400,
 			autoCenter: true,
-			duration: 1000,
+			duration: 2000,
 			pages: 12,
 			when: {
 	

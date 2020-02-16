@@ -1,17 +1,17 @@
 .sample-magazine1 #book-wrapper{
-	width:922px;
+	width:842px;
 	margin:0 39px;
 }
 
 .magazine1{
-	width:922px;
-	height:600px;
+	width:842px;
+	height:400px;
 	z-index:0;
 }
 
 .magazine1 .page{
-	width:461px;
-	height:600px;
+	width:421px;
+	height:400px;
 	background:white;
 
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -84,7 +84,7 @@
 .magazine1 .next-button,
 .magazine1 .previous-button{
 	width:22px;
-	height:600px;
+	height:595px;
 	position:absolute;
 	top:0;
 }

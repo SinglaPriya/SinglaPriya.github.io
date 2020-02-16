@@ -1,15 +1,15 @@
-.sample-magazine1 #book-wrapper{
-	width:922px;
+.sample-magazine2 #book-wrapper{
+	width:842px;
 	margin:0 39px;
 }
 
-.magazine1{
-	width:922px;
-	height:600px;
+.magazine2{
+	width:842px;
+	height:595px;
 	z-index:0;
 }
 
-.magazine1 .page{
+.magazine2 .page{
 	width:461px;
 	height:600px;
 	background:white;
@@ -21,7 +21,7 @@
 	box-shadow:0 0 20px rgba(0,0,0,0.2);
 }
 
-.magazine1 .even .gradient{
+.magazine2 .even .gradient{
 	position:absolute;
 	top:0;
 	left:0;
@@ -35,7 +35,7 @@
 	background-image:linear-gradient(left, rgba(0,0,0,0) 95%, rgba(0,0,0,0.2) 100%);
 }
 
-.magazine1 .odd .gradient{
+.magazine2 .odd .gradient{
 	position:absolute;
 	top:0;
 	left:0;
@@ -49,7 +49,7 @@
 	background-image:linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.15) 100%);
 }
 
-.magazine1 .loader{
+.magazine2 .loader{
 	background-image:url(../pics/loader.gif);
 	width:22px;
 	height:22px;
@@ -58,17 +58,17 @@
 	left:219px;
 }
 
-.sample-magazine1 .zoom-in .even .gradient,
-.sample-magazine1 .zoom-in .odd .gradient{
+.sample-magazine2 .zoom-in .even .gradient,
+.sample-magazine2 .zoom-in .odd .gradient{
 	display:none;
 }
 
-.sample-magazine1 .zoom-in .next-button,
-.sample-magazine1 .zoom-in .previous-button{
+.sample-magazine2 .zoom-in .next-button,
+.sample-magazine2 .zoom-in .previous-button{
 	display:none;
 }
 
-.show-bar .magazine1 .shadow{
+.show-bar .magazine2 .shadow{
 	-webkit-transition: -webkit-box-shadow 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s;
 	-o-transition: -webkit-box-shadow 0.5s;
@@ -81,15 +81,15 @@
 	box-shadow:0 0 20px #ccc;
 }
 
-.magazine1 .next-button,
-.magazine1 .previous-button{
+.magazine2 .next-button,
+.magazine2 .previous-button{
 	width:22px;
 	height:600px;
 	position:absolute;
 	top:0;
 }
 
-.magazine1 .next-button{
+.magazine2 .next-button{
 	right:-22px;
 	-webkit-border-radius:0 15px 15px 0;
 	-moz-border-radius:0 15px 15px 0;
@@ -98,7 +98,7 @@
 	border-radius:0 15px 15px 0;
 }
 
-.magazine1 .previous-button{
+.magazine2 .previous-button{
 	left:-22px;
 	-webkit-border-radius:15px 0 0 15px;
 	-moz-border-radius:15px 0 0 15px;
@@ -107,25 +107,25 @@
 	border-radius:15px 0 0 15px;
 }
 
-.magazine1 .previous-button-hover,
-.magazine1 .next-button-hover{
+.magazine2 .previous-button-hover,
+.magazine2 .next-button-hover{
 	background-color:rgba(0,0,0, 0.2);
 }
 
-.magazine1 .previous-button-hover,
-.magazine1 .previous-button-down{
+.magazine2 .previous-button-hover,
+.magazine2 .previous-button-down{
 	background-image:url(../pics/arrows.png);
 	background-position:-4px 284px;
 	background-repeat:no-repeat;
 }
 
-.magazine1 .previous-button-down,
-.magazine1 .next-button-down{
+.magazine2 .previous-button-down,
+.magazine2 .next-button-down{
 	background-color:rgba(0,0,0, 0.4);
 }
 
-.magazine1 .next-button-hover,
-.magazine1 .next-button-down{
+.magazine2 .next-button-hover,
+.magazine2 .next-button-down{
 	background-image:url(../pics/arrows.png);
 	background-position:-38px 284px;
 	background-repeat:no-repeat;
