@@ -1,0 +1,57 @@
+doc.ready{
+    all major html elements on main page are binded with some action
+    eg: hover while mouse over and stuff
+}
+
+windows.load(
+    {
+        bookshelf.preload(){
+            loading all samples one by one{
+                loading css and jss of all samples{
+                    bookshelf.loadsample() called{
+                        sample.callback= callback;
+                        sample.loaded=1;
+                        bookshelf.preloadimg{
+                            loading only 1 img
+                            bookshelf.loaded();{
+                                sample.loaded=2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+)
+
+
+on magaize click(
+    windows.load(
+        hash.on(hash, callback, title)({
+            yep:
+                parts[2]==undefined
+                bookshelf.open(){
+                    sample.callback(){
+248                        bookshelf.preloadimg(){
+251/46                            bookshelf.loaded()
+270                            add necesarry elements in #bookzoom like next and prev button
+73                             loadflipbook(){
+86                                 flipbook created
+237                                    bookshelf.showsample()
+                            }
+                        }
+                    }
+                }
+        })
+    )
+)
+
+showsample(){
+    .splash{
+        add class: preview, show-samples, sample-demoName(from demoName.css){
+            heigt: 800px, display:block
+        }
+        remove class: no-transition
+    }
+    
+}
