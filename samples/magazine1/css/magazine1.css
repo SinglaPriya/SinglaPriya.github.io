@@ -1,17 +1,18 @@
 .sample-magazine1 #book-wrapper{
-	width:842px;
-	margin:0 39px;
+	/* width:713px;
+	margin:0 39px; */
+	
 }
 
 .magazine1{
-	width:842px;
-	height:400px;
+	width:713px;
+	height:424px;
 	z-index:0;
 }
 
 .magazine1 .page{
-	width:421px;
-	height:400px;
+	width:356px;
+	height:424px;
 	background:white;
 
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -84,7 +85,7 @@
 .magazine1 .next-button,
 .magazine1 .previous-button{
 	width:22px;
-	height:595px;
+	height:inherit;
 	position:absolute;
 	top:0;
 }
@@ -115,7 +116,7 @@
 .magazine1 .previous-button-hover,
 .magazine1 .previous-button-down{
 	background-image:url(../pics/arrows.png);
-	background-position:-4px 284px;
+	background-position:-4px 190px;
 	background-repeat:no-repeat;
 }
 
@@ -127,6 +128,6 @@
 .magazine1 .next-button-hover,
 .magazine1 .next-button-down{
 	background-image:url(../pics/arrows.png);
-	background-position:-38px 284px;
+	background-position:-38px 190px;
 	background-repeat:no-repeat;
 }

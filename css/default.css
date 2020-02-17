@@ -17,8 +17,13 @@ body, ul, table, form{
 
 body{
 	overflow-x: auto;
-	overflow-y: auto;
+	overflow-y: hidden;
 	width: 110vw;
+	background-color: white;
+}
+
+.greyBg{
+	background-color: rgb(37, 37, 37) ;
 }
 /*  #Tablet (Portrait)
 	Note: Design for a width of 768px
@@ -184,7 +189,7 @@ body{
 h1{
 	font:38px 'District Thin', helvetica, arial;
 	font-weight:lighter;
-	margin:20px 0;
+	margin:10px 0;
 	color: black;
 
 	/* -webkit-text-fill-color: #333;
@@ -223,7 +228,6 @@ li{
 }
 
 .splash{
-	/* width:150vw; */
 	height:100%;	
 	-webkit-transition:height 1s;
 	-moz-transition:height 1s;
@@ -261,11 +265,7 @@ li{
 	position: absolute;
 	width: 22%;
 	display: inline-block;
-	/* left: 1%; */
-	/* float:left; */
 	margin: 10px;
-	/* margin-top:100px; */
-	/* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
 }
 
 /* .turnjs{
@@ -454,11 +454,15 @@ li{
 	transition:transform 1s;
 } */
 
-.icon{
+/* .icon{
 	width:22px;
 	height:22px;
 	background-image:url(../pics/new-sprites.png);
 	display:inline-block;
+} */
+.share{
+	font-size: 1.2rem;
+	color: grey
 }
 
 .details .options .icon{
@@ -476,34 +480,19 @@ li{
 	right:20px;
 	display:none;
 } */
-
-
-.development{
-	background-position:0 0;
-}
-
-.github{
-	background-position:-22px 0;
-}
-
-.table-contents{
-	background-position:-88px 0;
-}
-
-.zoom-in{
-	background-position:-198px 0;
+.zoom-out{
+	font-size: 1.2rem;
+	color: grey;
+	z-index: 100;
 }
 
 .zoom-out, .zoom-out-hover{
-	background-position:-220px 0;
-	width:44px;
-	height:44px;
 	position:absolute;
 	top:20px;
-	right:20px;
+	right:13%;
 }
 
-.share-facebook{
+/* .share-facebook{
 	background-position:-110px 0;
 }
 
@@ -517,34 +506,34 @@ li{
 
 .share-plus{
 	background-position:-176px 0;
-}
-
-.table-contents-hover{
-	background-position:-88px -22px;
-}
+} */
 
 .zoom-in-hover{
-	background-position:-198px -22px;
+	color: rgb(34, 34, 34)	
 }
 
 .zoom-out-hover{
-	background-position:-264px 0;
+	color: rgb(34, 34, 34)	
 }
 
 .share-facebook-hover{
-	background-position:-110px -22px;
+	color: rgb(34, 34, 34)	
 }
 
 .share-twitter-hover{
-	background-position:-132px -22px;
+	color: rgb(34, 34, 34)	
 }
 
 .share-pinterest-hover{
-	background-position:-154px -22px;
+	color: rgb(34, 34, 34)	
 }
 
 .share-plus-hover{
-	background-position:-176px -22px;
+	color: rgb(34, 34, 34)	
+}
+
+.zoom-out-hover{
+	color: rgb(34, 34, 34)	
 }
 
 .bookshelf{
@@ -553,15 +542,6 @@ li{
 	width: 80%;
 	margin-left: 25%;
 	margin-top:140px;
-}
-
-.bookshelf .shelf{
-	/* background:url(../pics/bookshelf.gif);
-	background-size:100%; */
-	/* position: fixed; */
-	/* margin-right: 10px;
-	width:1000px;
-	height:640px; */
 }
 
 .bookshelf .shelf .row-1{
@@ -610,13 +590,6 @@ li{
 	text-align:center;
 	position:relative;
 }
-
-/* .bookshelf .suggestion{
-	font:12px 'District Thin', helvetica, arial;
-	color:#999;
-	text-align:center;
-	line-height:40px;
-} */
 
 .bookshelf .sample,
 .bookshelf-row .sample{
@@ -804,22 +777,28 @@ footer{
 .samples{
 	position:absolute;
 	top:0;
-	left:10vw;
-	width:1000px;
-	height:500px;
-	display:none;
+	left:0;
+	width:100%;
+	height:100vh;
+	display:block;
 }
 
+/* #book-wrapper #slider-bar{
+	align-content: center;
+	padding: 20%;
+	background-color: rgb(37, 37, 37);
+} */
 .show-samples .samples{
 	display:block;
 }
 
 .samples .bar{
-	height:100px;
-	width:1000px;
+	align-content: center;
+	/* background-color: rgb(37, 37, 37); */
+	height:45px;
+	padding: 5px;
 	overflow:hidden;
 	opacity:0;
-	color: black;
 	-webkit-transition:opacity 0.1s;
 	-moz-transition:opacity 0.1s;
 	-o-transition:opacity 0.1s;
@@ -827,8 +806,18 @@ footer{
 	transition:opacity 0.1s;
 
 }
-
-.show-bar .bar{
+.samples #book-description{
+	padding: 0px 20px 0px 20px;
+	width:96vw;
+	overflow:visible;
+	opacity:0;
+	-webkit-transition:opacity 0.1s;
+	-moz-transition:opacity 0.1s;
+	-o-transition:opacity 0.1s;
+	-ms-transition:opacity 0.1s;
+	transition:opacity 0.1s;
+}
+.show-extras .bar{
 	-webkit-transition:opacity 1s;
 	-moz-transition:opacity 1s;
 	-o-transition:opacity 1s;
@@ -837,11 +826,20 @@ footer{
 	opacity:1;
 }
 
-.show-bar .details{
+.show-extras #book-description{
+	-webkit-transition:opacity 1s;
+	-moz-transition:opacity 1s;
+	-o-transition:opacity 1s;
+	-ms-transition:opacity 1s;
+	transition:opacity 1s;
+	opacity:1;
+}
+
+.show-extras .details{
 	display:none;
 }
 
-.show-bar .bookshelf{
+.show-extras .bookshelf{
 	display:none;
 }
 
@@ -854,7 +852,7 @@ footer{
 	transition:opacity 0.1s;
 }
 
-.show-bar .turnjs-slider{
+.show-extras .turnjs-slider{
 	opacity:1;
 	-webkit-transition:opacity 1s;
 	-moz-transition:opacity 1s;
@@ -864,7 +862,7 @@ footer{
 }
 
 .samples .share{
-	margin-top:40px;
+	/* margin-top:5px; */
 	text-align:center;
 }
 
@@ -873,24 +871,22 @@ footer{
 	cursor:pointer;
 }
 
-.samples .quit{
+.samples #book-zoom{
+	align-content: center;
+	padding-left: 20%;
+}
+
+/* .samples .quit{
 	background-position:-44px 0;
 	cursor:default;
 	position:absolute;
 	right:0;
 	top:45px;
-}
+} */
 
-.samples .quit:hover{
+/* .samples .quit:hover{
 	background-position:-66px 0;
-}
-
-#book-wrapper{
-	width:842px;
-	height:400px;
-	margin-left:20px;
-	margin-right:20px;
-}
+} */
 
 header{
 	width:1000px;
